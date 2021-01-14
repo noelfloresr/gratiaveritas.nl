@@ -1,0 +1,132 @@
+body.login div#login p#backtoblog {
+    display: none;
+}
+
+body {
+    background: transparent url("https://picsum.photos/1920/1080") no-repeat center center !important;
+    background-size: cover !important;
+}
+
+.login-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+#login {
+    width: auto;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login #nav a {
+    color: #bbb !important
+}
+
+.login #nav a:hover {
+    color: #fff !important
+}
+
+.login form {
+    border: 0;
+    box-shadow: none;
+    padding: 0 30px 40px;
+    margin-top: 0;
+}
+
+#login h1 {
+    background: white;
+    padding-top: 20px;
+}
+
+#login h1 a {
+    background: none;
+    text-indent: 0;
+    height: auto;
+}
+
+#login h1 a img {
+    max-width: 100%;
+}
+
+#loginform>p:nth-child(1) label,
+#loginform .user-pass-wrap label {
+    display: none;
+}
+
+.wp-core-ui .button-primary:focus {
+    box-shadow: none;
+}
+
+.wp-core-ui .button-primary {
+    background-color: #3a6730;
+    border-color: #3a6730;
+    transition-duration: 0.1s;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 5px 0 !important;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.login form .input {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    padding: 9px 0;
+    font-size: 20px;
+    transition: padding ease 0.1s;
+}
+
+.login form .input:focus {
+    box-shadow: none;
+    background-color: #f5f5f5;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.login #nav {
+    text-align: center;
+}
+
+.login #nav a {
+    color: white;
+}
+
+
+.login #login_error {
+    margin: 0;
+    padding: 10px 30px;
+    border: none;
+    background: #ffecec;
+}
+
+.login p.message {
+    margin: 0;
+    padding: 10px 30px;
+    border: none;
+    display: block;
+    background: #ebf5e0;
+}
+
+.login p.message+#loginform,
+#login_error+#loginform {
+    padding-top: 20px;
+}
+
+.login form.shake {
+    animation: none;
+}
+
+.privacy-policy-page-link {
+    display: none;
+}

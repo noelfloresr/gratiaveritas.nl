@@ -1,0 +1,77 @@
+
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125,  130, 135, 140, 145, 150, 155, 160, 165, 170,  175, 180, 185,  190, 195, 200); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.column-reverse-mobile {
+    @media (max-width: 1399px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.show-mobile {
+    @media (min-width: 1400px) {
+        display: none!important;
+    }
+}
+
+.hide-mobile {
+    @media (max-width: 1399px) {
+        display: none!important;
+    }
+}
+
+.row-reverse-desktop {
+  @media (min-width: 1400px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+// Text
+.text-center {
+  text-align: center;
+}
+
+// Display
+.d-block {
+  display: block!important;
+}
+
+
+.d-none {
+  display: none!important;
+}

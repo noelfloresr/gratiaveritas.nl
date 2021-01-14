@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+  background-color: #f6f6f6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  color: #C83F62;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+h2 {
+  line-height: 45px;
+  p {
+    line-height: 45px;
+  }
+}
+
+a {
+  color: #C83F62;
+}
+
+p {
+  line-height: 30px;
+}
+
+ul {
+  li {
+    padding-bottom: 15px;
+  }
+}
