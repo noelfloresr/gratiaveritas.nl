@@ -13,7 +13,7 @@ if ($array_length === 2) {
 };
 ?>
 
-<div class="container">
+<div class="container bg-white">
 	<div class="two-columns-container">
 		<!-- One Half -->
 		<div class="col one-half" style="color: <?php echo $left_color ?> ">

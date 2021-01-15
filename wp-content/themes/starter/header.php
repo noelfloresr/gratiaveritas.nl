@@ -12,7 +12,7 @@
 
   <div class="site-wrapper">
     <header id="header">
-      <div class="container">
+      <div class="container bg-white">
         <div class="row">
           <div class="col">
             <div class="header-container">
