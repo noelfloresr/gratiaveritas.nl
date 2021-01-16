@@ -49,6 +49,10 @@
 	}
 }
 
+.full-width {
+	padding-top: 80px;
+}
+
 // Buttons
 .btn-circle {
 }
@@ -64,7 +68,7 @@
 
 .col.one-half {
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 30px;
 }
 
 .col.one-half img {
@@ -75,29 +79,6 @@
 .two-columns-container {
 	display: flex;
 	flex-direction: column;
-}
-
-@media (min-width: 768px) {
-	.two-columns-container .col:first-child {
-		padding-right: 15px;
-	}
-	.two-columns-container .col:last-child {
-		padding-left: 15px;
-	}
-	.two-columns-link {
-		position: absolute;
-		bottom: 0;
-	}
-}
-
-@media (min-width: 992px) {
-	.two-columns-container {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.col.one-half {
-		max-width: 48%;
-	}
 }
 
 .two-images-container {
@@ -123,13 +104,24 @@
 	background: #ff796d;
 	color: white;
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	.two-columns-container {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			max-width: 1140px;
+			width: 100%;
+			left: 0;
+			bottom: -65px;
+			height: 300px;
+			background-color: white;
+			z-index: -1;
+		}
 		.left-shape {
 			background: #c83f62;
 			padding: 30px 30px 60px 30px;
-			clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%);
-			margin-top: -80px;
+			margin-top: 30px;
 			h2 {
 				padding-top: 30px;
 				font-family: "Bodoni Moda", serif;
@@ -175,10 +167,14 @@
 			}
 		}
 	}
-	@media (min-width: 992px) {
+	@media (min-width: 1200px) {
 		max-height: 380px;
 		padding-bottom: 0;
 		.two-columns-container {
+			.left-shape {
+				clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
+				margin-top: -80px;
+			}
 			.right-column {
 				padding-left: 50px;
 				align-items: center;
@@ -198,6 +194,29 @@
 	}
 }
 
-.read-more-section-bottom {
-	// margin-top: -34px;
+@media (min-width: 768px) {
+	
+	.two-columns-link {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+	
+	.two-columns-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		.col:first-child {
+			padding-right: 15px;
+		}
+		.col:last-child {
+			padding-left: 15px;
+		}
+	}
+	.col.one-half {
+		max-width: 48%;
+		padding-bottom: 100px;
+	}
 }

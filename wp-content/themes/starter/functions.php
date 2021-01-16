@@ -38,7 +38,7 @@ $framework->register_post_type(array(
         'singular' => 'Workshop',
         'plural' => 'Workshops',
     ),
-    'supports' => array('title', 'thumbnail','editor')
+    'supports' => array('title', 'thumbnail', 'editor')
 ));
 
 /**
@@ -75,7 +75,8 @@ $framework->login_screen(array(
 $framework->go();
 
 // TODO: DELETE LATER
-function template_files() {
+function template_files()
+{
     wp_enqueue_style('jquery-ui', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js');
     wp_enqueue_script('jquery-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js');
@@ -86,6 +87,13 @@ function template_files() {
     wp_enqueue_script('smooth', get_theme_file_uri('/assets/js/smooth.js'), NULL, '1.0', true);
     wp_enqueue_script('main', get_theme_file_uri('/assets/js/index.js'), NULL, '1.0', true);
     wp_enqueue_style('index', get_theme_file_uri('/assets/css/style.css'));
-  }
-  
-  add_action('wp_enqueue_scripts', 'template_files');
+}
+
+add_action('wp_enqueue_scripts', 'template_files');
+
+// add_filter('acf/fields/wysiwyg/toolbars', 'my_toolbars');
+// function my_toolbars($toolbars)
+// {
+//     array_unshift($toolbars['Full'][1], 'forecolor');
+//     return $toolbars;
+// }
