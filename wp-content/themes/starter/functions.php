@@ -90,10 +90,3 @@ function template_files()
 }
 
 add_action('wp_enqueue_scripts', 'template_files');
-
-// add_filter('acf/fields/wysiwyg/toolbars', 'my_toolbars');
-// function my_toolbars($toolbars)
-// {
-//     array_unshift($toolbars['Full'][1], 'forecolor');
-//     return $toolbars;
-// }
