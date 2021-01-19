@@ -271,6 +271,67 @@
 	}
 }
 
+.full-width-with-background-color {
+	color: white;
+	padding: 80px 30px;
+	max-width: 1140px;
+	margin: auto;
+}
+
+.profile {
+	position: relative;
+	z-index: 1;
+	max-width: 1140px;
+	margin: auto;
+	background-color: white;
+	.col:first-child {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.image-profile {
+		position: relative;
+		img {
+			max-width: 250px;
+			transform: rotate(5deg);
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			transform: rotate(-10deg);
+			left: 0;
+			top: -10px;
+			z-index: -1;
+		}
+		&.green {
+			&:after {
+				background-color: #0B8486;
+			}
+		}
+		&.orange {
+			&:after {
+				background-color: #C83F62;
+			}
+		}
+	}
+	.name {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.phone-email {
+		color: #0B8486;
+		a {
+			color: #0B8486;
+		}
+	}
+	.content {
+		padding-top: 30px;
+		color: #0B8486;
+	}
+}
+
 @media (min-width: 768px) {
 	.two-columns-link {
 		position: absolute;
@@ -290,7 +351,8 @@
 		}
 	}
 	.col.one-half {
-		max-width: 48%;
+		max-width: 50%;
 		padding-bottom: 100px;
+		flex: 1;
 	}
 }
