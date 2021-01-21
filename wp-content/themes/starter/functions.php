@@ -58,7 +58,7 @@ $framework->register_taxonomy(array(
  * Image Sizes
  * 
  */
-$framework->add_image_size('square', 200, 200);
+// $framework->add_image_size('square', 200, 200);
 
 /**
  * Login Screen

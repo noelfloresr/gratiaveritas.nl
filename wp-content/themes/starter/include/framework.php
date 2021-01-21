@@ -126,14 +126,14 @@ class Framework
      * @param array $args
      *
      */
-    public function add_image_size(string $handle, int $width, int $height, bool $crop = true, bool $retina = true)
-    {
-        add_image_size($handle, $width, $height, $crop);
+    // public function add_image_size(string $handle = NULL, int $width, int $height, bool $crop = true, bool $retina = true)
+    // {
+    //     add_image_size($handle, $width, $height, $crop);
 
-        if ($retina === true) {
-            add_image_size($handle . '@x2', $width * 2, $height * 2, $crop);
-        }
-    }
+    //     if ($retina === true) {
+    //         add_image_size($handle . '@x2', $width * 2, $height * 2, $crop);
+    //     }
+    // }
 
     public function login_screen($args)
     {

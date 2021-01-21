@@ -3,7 +3,7 @@ $shape_color = $content['shape_color'];
 ?>
 
 <div class="profile">
-  <div class="container">
+  <!-- <div class="container"> -->
     <div class="two-columns-container">
       <div class="col one-half">
         <div class="image-profile <?php echo $shape_color ?>">
@@ -22,5 +22,5 @@ $shape_color = $content['shape_color'];
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </div>

@@ -137,6 +137,7 @@
 					font-family: "Bodoni Moda", serif;
 					font-size: 30px;
 					line-height: 45px;
+					text-align: left;
 				}
 			}
 			.link {
@@ -284,6 +285,7 @@
 	max-width: 1140px;
 	margin: auto;
 	background-color: white;
+	padding: 0 30px;
 	.col:first-child {
 		align-items: center;
 		display: flex;
@@ -307,12 +309,12 @@
 		}
 		&.green {
 			&:after {
-				background-color: #0B8486;
+				background-color: #0b8486;
 			}
 		}
 		&.orange {
 			&:after {
-				background-color: #C83F62;
+				background-color: #c83f62;
 			}
 		}
 	}
@@ -321,14 +323,50 @@
 		margin-top: 30px;
 	}
 	.phone-email {
-		color: #0B8486;
+		color: #0b8486;
 		a {
-			color: #0B8486;
+			color: #0b8486;
 		}
 	}
 	.content {
 		padding-top: 30px;
-		color: #0B8486;
+		color: #0b8486;
+	}
+}
+
+.faq {
+	position: relative;
+	max-width: 1140px;
+	padding: 0 30px;
+	margin: auto;
+	background-color: #0b8486;
+	color: white;
+	ul {
+		li {
+			padding-bottom: 10px;
+		}
+	}
+	.shape {
+		// clip-path: polygon(0 0, 100% 2%, 100% 98%, 0 100%);
+		background-color: #59b3a7;
+		padding: 50px;
+	}
+	@media (min-width: 1200px) {
+		.shape {
+			position: absolute;
+			bottom: -30px;
+			transform-style: preserve-3d;
+			&:after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				transform: translateZ(-1px) rotate(-3deg);
+				top: 0;
+				left: -10px;
+			}
+		}
 	}
 }
 

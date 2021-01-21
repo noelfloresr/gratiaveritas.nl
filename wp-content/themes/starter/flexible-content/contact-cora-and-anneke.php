@@ -10,7 +10,7 @@
       <div class="shape">
         <?php echo apply_filters('the_content', $content['content']); ?>
       </div>
-      
     </div>
   </div>
 </div>
+<div class="section p-b-30 w-100 bg-white"></div>
