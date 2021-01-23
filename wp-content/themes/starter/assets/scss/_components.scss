@@ -111,11 +111,16 @@
 		}
 		.left-shape {
 			background: #c83f62;
-			padding: 30px 30px 60px 30px;
+			padding: 30px;
 			margin-top: 30px;
 			h2 {
-				padding-top: 30px;
 				font-family: "Bodoni Moda", serif;
+			}
+			@media (min-width: 1200px) {
+				padding: 30px 30px 60px 30px;
+				h2 {
+					padding-top: 30px;
+				}
 			}
 		}
 		.col.one-half {
@@ -357,6 +362,68 @@
 				top: 0;
 				left: -10px;
 			}
+		}
+	}
+}
+
+.contact {
+	padding: 30px 0 60px 0;
+	.input-container {
+		margin-bottom: 15px;
+		label {
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+		input, textarea {
+			display: block;
+			width: 100%;
+			padding: .375rem .75rem;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #212529;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid #ced4da;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border-radius: .25rem;
+			transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+		
+	}
+	
+	.wpcf7-submit {
+		display: inline-block;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #212529;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+		background-color: transparent;
+		border: 1px solid transparent;
+		padding: .375rem .75rem;
+		font-size: 1rem;
+		border-radius: .25rem;
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		background-color: #C83F62;
+		color: white;
+	}
+
+	address {
+		line-height: 30px;
+	}
+	@media(min-width: 1200px) {
+		display: flex;
+		justify-content: space-between;
+		.right {
+			width: 50%;
 		}
 	}
 }

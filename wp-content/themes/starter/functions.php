@@ -32,14 +32,14 @@ $framework->enqueue_style(array(
  * Post Types
  * 
  */
-$framework->register_post_type(array(
-    'slug' => 'workshops',
-    'name' => array(
-        'singular' => 'Workshop',
-        'plural' => 'Workshops',
-    ),
-    'supports' => array('title', 'thumbnail', 'editor')
-));
+// $framework->register_post_type(array(
+//     'slug' => 'workshops',
+//     'name' => array(
+//         'singular' => 'Workshop',
+//         'plural' => 'Workshops',
+//     ),
+//     'supports' => array('title', 'thumbnail', 'editor')
+// ));
 
 /**
  * Taxonomies
