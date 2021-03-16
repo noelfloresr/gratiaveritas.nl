@@ -5,7 +5,7 @@
 ?>
 <div class="hero" style="background: url(<?php echo $content['background_image']['url'] ?>), #fff;">
   <div class="container">
-    <div class="hero-post-it" style="background-color: <?php echo $postit_color ?>;">
+    <div class="hero-post-it popout" style="background-color: <?php echo $postit_color ?>;">
       <h2><?php echo apply_filters('the_content', $content['text']); ?></h2>
     </div>
   </div>

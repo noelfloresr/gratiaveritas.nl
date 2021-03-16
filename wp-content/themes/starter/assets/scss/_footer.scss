@@ -2,6 +2,7 @@ footer {
   position: relative;
   background-color: #c83f62;
   min-height: 150px;
+  margin-top: -1px;
   .container {
     position: relative;
   }
@@ -13,5 +14,22 @@ footer {
   img {
     max-width: 200px;
     transform: rotate(5deg);
+  }
+  ul.footer-menu {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    li {
+      list-style: none;
+      a {
+        color: white !important;
+      }
+    }
+    @media(min-width: 768px) {
+      display: flex;
+      li {
+        padding-right: 20px;
+      }
+    }
   }
 }

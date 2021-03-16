@@ -4,50 +4,94 @@
 	background-size: cover!important;
 	min-height: 600px;
 	position: relative;
-	.hero-post-it {
-		width: 350px;
-		height: 350px;
-		font-family: "Bodoni Moda", serif;
-		font-size: 40px;
-		position: absolute;
-		right: 100px;
-		top: 100px;
-		color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 30px;
-		transform-style: preserve-3d;
-		box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.3);
-		h2 {
-			font-size: 40px;
-			padding-bottom: 0;
+}
+
+.slider {
+	position: relative;
+	.owl-stage-outer {
+		max-height: 480px;
+	}
+	.image_mobile {
+		img {
+			width: 100%;
 		}
+	}
+	.owl-carousel {
+		display: none;
+	}
+	@media(min-width: 1024px) {
+		.image_mobile {
+			img {
+				display: none;
+			}
+		}
+		.owl-carousel {
+			display: block;
+		}
+	}
+}
+
+.hero-post-it {
+	width: 100%;
+	position: relative;
+	font-family: "Bodoni Moda", serif;
+	font-size: 40px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	transform-style: preserve-3d;
+	box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.3);
+	h2 {
+		font-size: 40px;
+		padding-bottom: 0;
+	}
+	@media(min-width: 1024px) {
+		position: absolute;
+		width: 330px;
+		height: 330px;
+		z-index: 1;
+		right: 100px;
+		top: 60px;
 		&:after {
 			position: absolute;
 			content: "";
 			width: 100%;
 			height: 100%;
 			background-color: white;
-			// transform: rotate(-20deg);
 			transform: translateZ(-1px) rotate(-20deg);
 		}
-		@media (max-width: 768px) {
-			top: unset;
-			bottom: 0;
-			width: 100%;
-			right: 0;
-			height: 200px;
-			&:after {
-				display: none;
-			}
-		}
-		p {
-			letter-spacing: 1px;
-			text-align: center;
-			padding-bottom: 0;
-		}
 	}
+	p {
+		letter-spacing: 1px;
+		text-align: center;
+		padding-bottom: 0;
+	}
+}
+
+.popout {
+	animation: popout 2s ease;
+	-webkit-animation: popout 2s ease;
+	&:after{
+		animation: popin 3s ease;
+	}
+}
+@keyframes popout {
+	from{transform:scale(0)}
+	80%{transform:scale(1.2)}
+	to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+	from{-webkit-transform:scale(0)}
+	80%{-webkit-transform:scale(1.2)}
+	to{-webkit-transform:scale(1)}
+}
+
+@keyframes popin {
+	from{transform: translateZ(-1px) rotate(0deg);}
+	80%{transform: translateZ(-1px) rotate(-10deg);}
+	to{transform: translateZ(-1px) rotate(-20deg);}
 }
 
 .full-width {

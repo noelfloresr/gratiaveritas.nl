@@ -49,6 +49,13 @@ header {
                   background-color: #0b8486;
                 }
               }
+              &#menu-item-30 {
+                a {
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
               &:nth-last-child(-n + 3) {
                 a {
                   color: #c83f62;
